@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">  
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script type="text/javascript" src="funciones.js"></script>
+    <title>Fabrica</title>
+</head>
+<body style=" background-color:khaki"  >
+    
+    <div class="container" >
+        <div class="col-md-13">
+
+            <h1 class="page-header">
+                   Heladeria "los dos gustos"
+                  
+            </h1>
+               
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Registre un empleado</h3>
+                    
+                    
+                </div>
+
+                <div class="panel-body">
+
+                   <form action="administracion.php" method="POST" enctype="multipart/form-data">
+
+                                        <div class="form-group">
+                                            <label for="nombre">Nombre:</label>
+                                            <input class="form-control"type="text" name="nombre" placeholder="aca va su nombre" >
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="nombre">Apellido:</label>
+                                            <input class="form-control"type="text" name="apellido" placeholder="ingrese su apellido" >
+                                        </div>
+                                        <div class="form-group">
+                                                
+                                        <label for="nombre">Dni:</label>
+                                        <input class="form-control"type="text" name="dni" placeholder="aca va su dni" >
+                                            </div>
+                                    
+                                        <div class="form-group">
+                                            <label for="nombre">Sexo:</label>
+                                            <input class="form-control"type="text" name="sexo" placeholder="aca va su sexo" >
+                                        </div>
+                                        <div class="form-group">
+                                        <label for="nombre">Sueldo:</label>
+                                        <input class="form-control"type="text" name="sueldo" placeholder="aca va su sueldo" >
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="nombre">Legajo:</label>
+                                            <input class="form-control"type="text" name="legajo" placeholder="aca va su legajo" >
+                                
+                                        </div>
+                                    
+                                
+                                    
+                                    <div class="form-group">
+                                            <label for="nombre">Foto:</label>
+                                            
+                                            <input class="form-control"type="file" name="foto" id="foto" placeholder="aca va su foto" >
+                                        
+                                        <img id="blah" src="#" alt="your image" />
+                                
+                                        </div>
+                                
+
+                                    <br>
+                                
+                                    <input class="btn btn-primary "type="submit" value="Guardar" name="guardar">
+          
+       
+                </form>
+
+                    <form action="administracion.php" method="POST"  enctype="multipart/form-data">
+                        <div class="form-group">
+                          <label for="eliminar">Eliminar:</label>
+
+                          <input class="form-control"type="text" name="txtDni" placeholder="ingrese Dni para eliminar" >
+                          
+                          <input class="btn btn-primary "type="submit" value="Eliminar" name="eliminar">
+                                    
+                                            </div>
+                    </form>
+
+        <form action="mostrar.php">
+            <br>
+
+            <input class="btn btn-primary "type="submit" value="mostrar Empleados" name="mostrar">
+        </form>
+       
+                    </div>
+              
+            </div>
+           
+        
+
+        </div>
+         
+         
+        
+    </div>
+   
+    
+</body>
+</html>
